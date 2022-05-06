@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(16, 16, 16);
+    font-family: "Open Sans", sans-serif;
+    /* background-image: url(img/netflix-free.life_10-02-2020-02-06-47.png); */
+}
+
+
+
+.shapka {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 85px;
+    background-color: rgba(0, 0, 0, 0.13);
+    z-index: 1;
+}
+
+.content {
+    width: 100%;
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.content > a > img {
+    top: 20px;
+    left: 50px;
+    width: 180px;
+}
+
+.search {
+    background-color: rgba(240, 248, 255, 0);
+    border: 0px;
+    margin-bottom: 15px;
+    outline: none;
+    color: aliceblue;
+    font-size: 25px;
+    width: 150px;
+    transition: .5s ease-in-out;
+    margin-right: 50px;
+}
+.search:hover {
+    border-bottom: 0px solid rgb(255, 0, 0);
+    box-shadow: 0px 2px 0px 0px rgb(255, 0, 0);
+}
+@media (max-width: 780px){
+
+    .content {
+        flex-direction: column;
+    align-items: flex-start;
+    }
+
+    .search {
+        margin-top: 10px;
+    }
+
+    .shapka{
+        height: 100px;
+    }
+
+    .content > a > img {
+    margin-left: 10px;
+    width: 120px;
+    }
+
+}
+
+
+.container {
+    position:relative;
+    display: block;
+    top: 150px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie {
+    width: 240px;
+    margin: 10px;
+    position: relative;
+}
+
+.movies_cover-inner {
+    position: relative;
+    height: 360px;
+}
+
+.movies_img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.movies_dark {
+    background-color: black;
+    opacity: .1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    height: 100%;
+    /* z-index: 1; */
+}
+
+.movies_dark:hover{
+    background-color: rgba(255, 255, 255, 0.123);
+    cursor: pointer;
+}
+
+.movies_info{
+    padding: 10px 0px;
+}
+
+.movies_title{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.movies_category{
+    font-size: 14px;
+    color: #ffd80e;
+}
+
+.movies_reiting{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+
+.movies_color-green{
+    border: 1px solid green;
+}
+
+.movies_color-orange{
+    border: 1px solid orange
+}
+
+.movies_color-red{
+    border: 1px solid red
+}
